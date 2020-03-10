@@ -1,0 +1,43 @@
+##DESCRIPTION:  this file contains absolute paths to directories and/or files to backup.
+##NOTES:	Comments (starting with '#') are to be kept on seperate lines - these are not processed.
+# ------------------------------------------------------------------------------------------------------
+
+##COMMON SYSTEM FILES
+#/etc/ssh/sshd_config
+#/etc/default/keyboard
+#/etc/fstab
+#/etc/samba/smb.conf
+#/etc/hosts
+#/etc/hosts.allow
+#/etc/hosts.deny
+#/etc/ufw/user.rules
+#/etc/ufw/before.rules
+#/etc/hostname
+#/etc/network/interfaces
+#/etc/dnsmasq.conf
+#/etc/ddclient.conf
+#/etc/default/ddclient
+#/etc/aliases
+#/etc/group
+#/etc/passwd
+#/etc/postfix/main.cf
+
+
+##CRONTABS: found /var/spool/cron/crontabs/ but you should make a copy with [sudo crontab -l > ~/my-root-crontab.txt]
+#/var/spool/cron/crontabs/root
+
+##PERSONAL FILES
+/home/andre
+#/home/andre/my_cronjobs
+#/home/andre/Downloads
+#/home/andre/Documents
+
+
+##HA CLUSTER (drbd, pacemaker/corosync, samba) - additional beyond
+#/etc/network/interfaces
+#/etc/drbd.conf
+#/etc/hosts
+#/etc/hostname
+#/etc/corosync/corosync.conf
+##sudo cibadmin --query > ~/my-cib.xml
+
